@@ -1,0 +1,36 @@
+ASSIGNMENT ON FIND ONE METHOD.
+In MongoDB, the findOne() method is used to retrieve a single document from a collection that matches a specified query. It returns the first document that satisfies the query condition.
+
+Example: 
+{
+  _id: 1,
+  name: "John",
+  age: 25
+},
+{
+  _id: 2,
+  name: "Alice",
+  age: 30
+},
+{
+  _id: 3,
+  name: "Bob",
+  age: 28
+}
+
+To find a user with the name "Alice", you can use the findOne() method as follows:
+
+db.users.findOne({ name: "Alice" })
+
+ASSIGNMENT ON ENDPOINT
+In the context of MongoDB, an endpoint typically refers to the URL or network address where the MongoDB server is accessible. MongoDB provides various endpoints for different types of interactions with the database. These endpoints allow clients (applications or users) to connect to and communicate with the MongoDB server.
+
+EXAMPLE: CONNECTION ENDPOINT:
+The connection endpoint specifies the network address and port where the MongoDB server is running. It typically takes the form of an IP address or domain name and a port number. For example: mongodb://localhost:27017 represents the default MongoDB endpoint running on the local machine.
+
+STATUS CODE 404 AND 400
+Status 404 indicates that the requested resource could not be found on the server.
+It is used when the server cannot locate the specific resource or endpoint specified in the client's request. This typically occurs when the URL or route does not correspond to an existing resource on the server. AKA-NOT FOUND.
+
+Status 400 indicates that the server cannot process the client's request due to a malformed or invalid request. It signifies that there is an issue with the syntax or structure of the request sent by the client.
+AKA-BAD RESULT.
